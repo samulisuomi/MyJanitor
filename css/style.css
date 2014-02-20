@@ -3,3 +3,7 @@
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
 }
+
+.btn {
+	margin: 2px 2px;
+}

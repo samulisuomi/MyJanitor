@@ -1,6 +1,13 @@
 MyJanitor
 =========
 
+To run the server, add SETTINGS.py. Example:
+
+```no-highlight
+HOST='localhost'
+PORT=8080
+```
+
 http://bottlepy.org/docs/dev/tutorial.html
 
 https://developers.google.com/appengine/docs/python/getting-started-with-bottle

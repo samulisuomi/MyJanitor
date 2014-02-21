@@ -12,7 +12,7 @@
                 <div class="navbar navbar-inverse navbar-static-top">
                         <div class="container">
                         
-                                <a href="#" class="navbar-brand">MyJanitor</a>
+                                <a href="/" class="navbar-brand"><img src="img/myjanitor.png" height="80%"></a>
                                 
                                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                                         <span class="icon-bar"></span>

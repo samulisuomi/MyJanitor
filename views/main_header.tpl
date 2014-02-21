@@ -24,9 +24,9 @@
 
                                         <ul class="nav navbar-nav navbar-right">
                                                 <li class="{{li_class_home}}"><a href="/">Home</a></lI>
-                                                <li class="{{li_class_browse}}"><a href="#">Browse</a></lI>
+                                                <li class="{{li_class_browse}}"><a href="/browse">Browse</a></lI>
                                                 <li class="{{li_class_help}}"><a href="/help">Help</a></lI>
-                                                <li class="{{li_class_contact}}"><a href="#">Contact</a></lI>
+                                                <li class="{{li_class_contact}}"><a href="/contact">Contact</a></lI>
                                         </ul>
 
                                 </div>

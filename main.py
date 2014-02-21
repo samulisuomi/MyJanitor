@@ -8,9 +8,17 @@ SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, 
 def index():
     return template("index.tpl")
 
-@route("/help")
+@route('/browse')
+def browse():
+	return template("browse.tpl")
+
+@route('/help')
 def help():
 	return template("help.tpl")
+
+@route('/contact')
+def contact():
+	return template("contact.tpl")
 
 @error(404)
 def error404(error):

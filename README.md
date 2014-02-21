@@ -8,6 +8,10 @@ HOST='localhost'
 PORT=8080
 ```
 
+Then run main.py
+
+##Links
+
 http://bottlepy.org/docs/dev/tutorial.html
 
 https://developers.google.com/appengine/docs/python/getting-started-with-bottle

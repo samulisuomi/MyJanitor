@@ -23,7 +23,7 @@
                                 <div class="collapse navbar-collapse navHeaderCollapse">
 
                                         <ul class="nav navbar-nav navbar-right">
-                                                <li><a href="index.html">Home</a></lI>
+                                                <li><a href="/">Home</a></lI>
                                                 <li><a href="#">Browse</a></lI>
                                                 <li class="active"><a href="#">Help</a></lI>
                                                 <li><a href="#">Contact</a></lI>

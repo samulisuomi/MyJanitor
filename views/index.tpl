@@ -25,7 +25,7 @@
                                         <ul class="nav navbar-nav navbar-right">
                                                 <li class="active"><a href="#">Home</a></lI>
                                                 <li><a href="#">Browse</a></lI>
-                                                <li><a href="help.html">Help</a></lI>
+                                                <li><a href="/help">Help</a></lI>
                                                 <li><a href="#">Contact</a></lI>
                                         </ul>
 

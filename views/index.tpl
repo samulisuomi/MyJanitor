@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-        <head>
-                <title>Bootstrap-testi</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href="css/bootstrap.min.css" rel="stylesheet">
-                <link href="css/style.css" rel="stylesheet">
-                <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        </head>
-        <body>
- 
-                <div class="navbar navbar-inverse navbar-static-top">
-                        <div class="container">
-                        
-                                <a href="#" class="navbar-brand">MyJanitor</a>
-                                
-                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                </button>
-
-                                <div class="collapse navbar-collapse navHeaderCollapse">
-
-                                        <ul class="nav navbar-nav navbar-right">
-                                                <li class="active"><a href="#">Home</a></lI>
-                                                <li><a href="#">Browse</a></lI>
-                                                <li><a href="/help">Help</a></lI>
-                                                <li><a href="#">Contact</a></lI>
-                                        </ul>
-
-                                </div>
-                        </div>
-
-                </div>
-
+% include("main_header.tpl", li_class_home="active", li_class_browse="", li_class_help="", li_class_contact="" )
                 <div class = "container">
                
                         <div class="jumbotron text-center">
@@ -69,21 +34,5 @@
                                 </div>  
                         </div>
                 </div>
-
-                <div class = "navbar navbar-default navbar-fixed-bottom">
-               
-                        <div class="container">
-                                <p class = "navbar-text pull-left">(C) Janitor Inc.</p>
-                                <p class = "navbar-text pull-right">
-                                        <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
-                                        <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
-                                </p>
-
-                        </div>
-               
-                </div>
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                <script src="js/bootstrap.js"></script>
-               
-        </body>
-</html>
+ 
+ % include("main_footer.tpl")

@@ -1,7 +1,9 @@
+% from bottle import request
+
 <!DOCTYPE html>
 <html>
         <head>
-                <title>Bootstrap-testi</title>
+                <title>Taskit – palvelut sähkäristä parturiin</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
@@ -12,7 +14,7 @@
                 <div class="navbar navbar-inverse navbar-static-top">
                         <div class="container">
                         
-                                <a href="/" class="navbar-brand"><img src="img/myjanitor.png" height="80%"></a>
+                                <a href="/" class="navbar-brand"><img src="img/taskit.png" height="80%"></a>
                                 
                                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                                         <span class="icon-bar"></span>
@@ -23,10 +25,18 @@
                                 <div class="collapse navbar-collapse navHeaderCollapse">
 
                                         <ul class="nav navbar-nav navbar-right">
-                                                <li class="{{li_class_home}}"><a href="/">Home</a></lI>
-                                                <li class="{{li_class_browse}}"><a href="/browse">Browse</a></lI>
-                                                <li class="{{li_class_help}}"><a href="/help">Help</a></lI>
-                                                <li class="{{li_class_contact}}"><a href="/contact">Contact</a></lI>
+                                                <li class="{{ 'active' if request.path == '/' else '' }}"><a href="/">Esittely</a></lI>
+                                                <li class="{{ 'active' if request.path == '/browse' else '' }}"><a href="/browse">Selaa palveluja</a></lI>
+                                                <li class="{{ 'active' if request.path == '/help' else '' }}"><a href="/help">Ohje</a></lI>
+                                                <li class="{{ 'active' if request.path == '/contact' else '' }}"><a href="/contact">Ota yhteyttä</a></lI>
+                                                <li class = "dropdown">
+                                                       <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Kirjaudu<b class = "caret"></b></a>
+                                                        <ul class = "dropdown-menu">
+                                                                <li><a href = "#">Insert login form here</a></li>
+                                                                <li><a href = "#">With both sign up and in buttons</a></li>
+                                                        </ul>
+                                               
+                                                </li>
                                         </ul>
 
                                 </div>

@@ -17,13 +17,13 @@
                         
                                 <a href="/" class="navbar-brand logo-nav"><img src="img/taskit.png" height="100%"></a>
                                 
-                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" id="mobileNavButton">
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                 </button>
 
-                                <div class="collapse navbar-collapse navHeaderCollapse">
+                                <div class="collapse navbar-collapse navHeaderCollapse" id="mobileNavigation">
 
                                         <ul class="nav navbar-nav navbar-right">
                                                 <li class="{{ 'active' if request.path == '/' else '' }}"><a href="/">Esittely</a></lI>

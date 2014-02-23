@@ -28,7 +28,7 @@
 
                 <div class="container">
                     <div class="row text-center spanLoginRow">
-                            <h1>Sinulla on jo tunnus?</a></h3>
+                            <h1>Sinulla on jo tunnus?</h1>
                              <span class="btn btn-success" id="spanLogin">Kirjaudu sisään</span>
                     </div>
                 </div>

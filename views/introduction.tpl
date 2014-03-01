@@ -32,11 +32,5 @@
                              <span class="btn btn-success" id="spanLogin">Kirjaudu sisään</span>
                     </div>
                 </div>
-
-                <div class="container">
-                    <h4>(To be deleted...)</h4>
-                    <p><a href="/customerdemo">Customer demo</a></p>
-                    <p><a href="/providerdemo">Provider demo</a></p>
-                </div>
  
  % include("main_footer.tpl")

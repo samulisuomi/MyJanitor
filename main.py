@@ -20,9 +20,13 @@ def help():
 def contact():
 	return template("contact.tpl")
 
-@route('/reservation_draft')
+@route('/customer_reservation_draft')
 def contact():
-	return template("reservation_draft.tpl")
+	return template("customer_reservation_draft.tpl")
+
+@route('/provider_reservation_draft')
+def contact():
+	return template("provider_reservation_draft.tpl")
 
 @error(404)
 def error404(error):

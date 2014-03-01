@@ -37,3 +37,6 @@ nosetests.xml
 
 # Bottle
 SETTINGS.py*
+
+# Sqlite
+*.db

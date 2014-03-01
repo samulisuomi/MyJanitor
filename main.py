@@ -1,8 +1,15 @@
 from bottle  import *
 import SETTINGS
+import sqlite3
+import macaron
+import databaseobjects
 
 #Instead of supplying url in every handler, set up a template default
 SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, **kwargs)
+
+# install MacaronPlugin instance
+DB_FILE = "taskit.db"
+install(macaron.MacaronPlugin(DB_FILE))
 
 @route('/')
 def index():
@@ -27,13 +34,13 @@ def help():
 def contact():
 	return template("contact.tpl")
 
-@route('/customer_reservation_draft')
+@route('/customerdemo')
 def contact():
-	return template("customer_reservation_draft.tpl")
+	return template("customerdemo.tpl")
 
-@route('/provider_reservation_draft')
+@route('/providerdemo')
 def contact():
-	return template("provider_reservation_draft.tpl")
+	return template("providerdemo.tpl")
 
 @error(404)
 def error404(error):

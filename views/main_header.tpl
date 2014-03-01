@@ -23,7 +23,7 @@
                                         <span class="icon-bar"></span>
                                 </button>
 
-                                <div class="collapse navbar-collapse navHeaderCollapse" id="mobileNavigation">
+                                <div class="collapse navbar-collapse navHeaderCollapse">
 
                                         <ul class="nav navbar-nav navbar-right">
                                                 <li class="{{ 'active' if request.path == '/' else '' }}"><a href="/">Esittely</a></lI>
@@ -38,6 +38,18 @@
                                                         </ul>
                                                
                                                 </li>
+                                                <li class = "dropdown">
+                                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                                <form class="navbar-form" role="search">
+                                                                <div class="form-group">
+                                                                  <input type="text" class="form-control" placeholder="Etsi palveluja!">
+                                                                </div>
+                                                                <button type="submit" class="btn btn-default">Hae</button>
+                                                              </form>
+                                                        </ul>
+                                               
+                                                </li>      
                                         </ul>
 
                                 </div>

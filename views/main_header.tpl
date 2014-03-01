@@ -9,6 +9,7 @@
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
                 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+                <link rel="shortcut icon" href="/img/favicon.ico">
         </head>
         <body>
 

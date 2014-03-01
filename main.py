@@ -1,4 +1,4 @@
-from bottle  import Bottle, run, error, route, static_file, view, template, post, request, url, SimpleTemplate
+from bottle  import *
 import SETTINGS
 
 #Instead of supplying url in every handler, set up a template default
@@ -6,7 +6,14 @@ SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, 
 
 @route('/')
 def index():
-    return template("index.tpl")
+	if True: #ei kirjautunut
+		redirect("/introduction")
+	else: #kirjautunut
+		redirect("/browse")
+
+@route('/introduction')
+def introduction():
+	return template("introduction.tpl")
 
 @route('/browse')
 def browse():

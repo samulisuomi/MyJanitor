@@ -21,4 +21,16 @@ $(document).ready(function(){
 		}
 		$('#loginDropdown').dropdown('toggle');
 	});
+
+	// Date time picker for reservations
+	$('#timePickerStart').datetimepicker({
+		format: 'dd.MM.yyyy hh:mm',
+		pickSeconds: false
+	});
+
+	// Date time picker for reservations
+	$('#timePickerEnd').datetimepicker({
+		format: 'dd.MM.yyyy hh:mm',
+		pickSeconds: false
+	});
 });

@@ -52,18 +52,19 @@
 	            <td>Varsinais-Suomen LVI-Hermannit Oy</td>
 	            <td>LVI</td>
 	            <td>Tämän yrityksen kuvaus oman palvelunsa hyvyydestä...</td>
-	            <td><button class="btn btn-success" click="open()">Varaa!</button></td>
+	            <td><button class="btn btn-success" data-toggle="modal" data-target="#reservationModal">Varaa!</button></td>
 	          </tr>
 	          <tr>
 	            <td width="50px"><img src="img/favicon.ico" width="50px" height="50px"></td>
 	            <td>Remppajampat Ky</td>
 	            <td>LVI, Lattia-asennukset, Saneeraukset</td>
 	            <td>Tämän yrityksen kuvaus oman palvelunsa hyvyydestä...</td>
-	            <td><button class="btn btn-success" click="open()">Varaa!</button></td>
+	            <td><button class="btn btn-success" data-toggle="modal" data-target="#reservationModal">Varaa!</button></td>
 	          </tr>
 	        </tbody>
 	      </table>
 		</div>
 	</div>
 
- % include("main_footer.tpl")
+% include("modal_reservation.tpl")
+% include("main_footer.tpl")

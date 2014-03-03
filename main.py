@@ -1,67 +1,66 @@
-from bottle  import *
-import SETTINGS
-import sqlite3
-#import macaron
-import databaseobjects
+from framework import bottle
+from framework.bottle import Bottle, TEMPLATE_PATH, route, template, error, request, debug, post, redirect
+from google.appengine.ext.webapp.util import run_wsgi_app
 
-#Instead of supplying url in every handler, set up a template default
-SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, **kwargs)
+app = Bottle()
+TEMPLATE_PATH.insert(0,"views")	
 
-# install MacaronPlugin instance
-#DB_FILE = "taskit.db"
-#install(macaron.MacaronPlugin(DB_FILE))
+def main():
+	run_wsgi_app(bottle.default.app())
 
-@route('/')
-def index():
+if __name__=="__main__":
+	main()
+
+@app.route("/")
+def home():
+	debug(True) #remove when in production
 	if True: #ei kirjautunut
 		redirect("/introduction")
 	else: #kirjautunut
 		redirect("/browse")
 
-@route('/introduction')
+@app.route("/introduction")
 def introduction():
-	return template("introduction.tpl")
+	debug(True) #remove when in production
+	return template("views/introduction.tpl")
 
-@route('/browse')
+@app.route("/browse")
 def browse():
-	return template("browse.tpl")
+	return template("views/browse.tpl")
 
-@route('/help')
+@app.route("/help")
 def help():
-	return template("help.tpl")
+	return template("views/help.tpl")
 
-@route('/contact')
+@app.route("/contact")
 def contact():
-	return template("contact.tpl")
+	return template("views/contact.tpl")
 
-@route('/customerdemo')
+@app.route("/customerdemo")
 def contact():
-	return template("customerdemo.tpl")
+	return template("views/customerdemo.tpl")
 
-@route('/providerdemo')
+@app.route("/providerdemo")
 def contact():
-	return template("providerdemo.tpl")
-
-@error(404)
+	return template("views/providerdemo.tpl")	
+	
+@app.error(404)
 def error404(error):
     return template("404.tpl")
 
-@route('/css/<filename:path>', name='css')
+@app.route("/css/<filename:path>", name="css")
 def serve_css(filename):
-	return static_file(filename, root='css')
+	return static_file(filename, root="css")
 
-@route('/js/<filename:path>', name='js')
+@app.route("/js/<filename:path>", name="js")
 def serve_js(filename):
-    return static_file(filename, root='js')
+    return static_file(filename, root="js")
 
-@route('/fonts/<filename:path>', name='fonts')
+@app.route("/fonts/<filename:path>", name="fonts")
 def serve_fonts(filename):
-    return static_file(filename, root='fonts')
+    return static_file(filename, root="fonts")
 
-# This isn't exactly ideal because all images must be placed in the root of img/, but it works for now.
-@route("<path:re:.*>/<filename:re:.*\.(jpg|gif|png|ico)>")
+# This isn"t exactly ideal because all images must be placed in the root of img/, but it works for now.
+@app.route("<path:re:.*>/<filename:re:.*\.(jpg|gif|png|ico)>")
 def serve_images(filename, path):
 	return static_file(filename, root="img/")
-
-
-run(host=SETTINGS.HOST, port=SETTINGS.PORT, debug=True)

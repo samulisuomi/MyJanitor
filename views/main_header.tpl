@@ -1,4 +1,5 @@
-% from bottle import request
+% from framework import bottle
+% from framework.bottle import request
 
 <!DOCTYPE html>
 <html>

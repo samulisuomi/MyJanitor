@@ -1,4 +1,4 @@
-% include("main_header.tpl", li_class_home="", li_class_browse="", li_class_help="active", li_class_contact="" )
+% include("main_header.tpl")
 
                 <div class = "container">
                      <div class = "row">
@@ -14,4 +14,4 @@
                     
                </div>
 
- % include("main_footer.tpl")
+% include("main_footer.tpl")

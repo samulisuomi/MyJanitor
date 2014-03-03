@@ -40,3 +40,6 @@ SETTINGS.py*
 
 # Sqlite
 *.db
+
+# App Engine
+.DS_Store

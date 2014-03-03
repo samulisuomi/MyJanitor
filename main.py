@@ -1,15 +1,15 @@
 from bottle  import *
 import SETTINGS
 import sqlite3
-import macaron
+#import macaron
 import databaseobjects
 
 #Instead of supplying url in every handler, set up a template default
 SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, **kwargs)
 
 # install MacaronPlugin instance
-DB_FILE = "taskit.db"
-install(macaron.MacaronPlugin(DB_FILE))
+#DB_FILE = "taskit.db"
+#install(macaron.MacaronPlugin(DB_FILE))
 
 @route('/')
 def index():

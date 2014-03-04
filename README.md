@@ -1,5 +1,5 @@
-MyJanitor
-=========
+Taskit
+======
 
 Runs on Google App Engine: http://taskitbeta.appspot.com
 

@@ -1,7 +1,7 @@
 MyJanitor
 =========
 
-Runs on Google App Engine: taskitbeta.appspot.com
+Runs on Google App Engine: http://taskitbeta.appspot.com
 
 1. Clone the repository.
 2. Download https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python

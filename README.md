@@ -1,5 +1,5 @@
-Taskit (formerly known as MyJanitor)
-====================================
+Taskit
+======
 
 Runs on Google App Engine: http://taskitbeta.appspot.com
 
@@ -15,7 +15,7 @@ Runs on Google App Engine: http://taskitbeta.appspot.com
    ```no-highlight
    "C:\Program Files (x86)\Google\google_appengine\dev_appserver.py" "D:\workspace\MyJanitor"
    ```
-5. Open browser. The default address is localhost:8080. 
+5. Open your browser. The default address is localhost:8080. 
 
 ##Links
 

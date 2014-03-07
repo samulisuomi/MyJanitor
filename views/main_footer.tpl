@@ -3,7 +3,6 @@
                         <div class="container">
                                 <p class = "navbar-text pull-left">© Taskit Group</p>
                                 <p class = "navbar-text pull-left">(To be deleted:</p>
-                                <p class = "navbar-text pull-left"><a href="/customerdemo">Customer demo</a></p>
                                 <p class = "navbar-text pull-left"><a href="/providerdemo">Provider demo</a>)</p>
                                 <p class = "navbar-text pull-right">
                                         <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x some"></i></a>

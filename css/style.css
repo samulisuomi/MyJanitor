@@ -4,9 +4,6 @@
           border-radius: 0 !important;
 }
 */
-.btn {
-	margin: 2px 2px;
-}
 
 body {
 	margin-bottom: 80px;
@@ -22,4 +19,15 @@ body {
 
 .logo-nav {
 	padding: 10px;
+}
+
+.img-responsive {
+	min-height: 300px;
+	min-width: 960px;
+	width: 100%;
+}
+
+.mainSearchBar {
+	max-width: 400px;
+	margin: 0 auto;
 }

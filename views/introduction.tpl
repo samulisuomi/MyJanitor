@@ -1,16 +1,54 @@
 % include("main_header.tpl")
 
-                <div class="container">
-               
-                        <div class="jumbotron text-center">
-                                <h1>Sähkömies, putkimies, parturi?</h1>
-                                <p>Olet tullut oikeaan paikkaan. Taskit yhdistää asiakkaat ja pienyrittäjät intuitiivisella ja nopealla tavalla.</p>
+                <div id="mainCarousel" class="carousel slide">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mainCarousel" data-slide-to="1"></li>
+                        <li data-target="#mainCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/plumbing.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h1>Remontti tekemättä?</h1>
+                                <h3>Taskit tekee pienyrittäjien palveluiden etsimisestä ja varaamisesta helppoa.</h3>
+                            </div>
                         </div>
-               
+                        <div class="item">
+                            <img src="img/cleaning.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h1>Nurkat siivoamatta?</h1>
+                                <h3>Taskit tekee pienyrittäjien palveluiden etsimisestä ja varaamisesta helppoa.</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/garden.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h1>Puutarha hoitamatta?</h1>
+                                <h3>Taskit tekee pienyrittäjien palveluiden etsimisestä ja varaamisesta helppoa.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control left" href="#mainCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+                    <a class="carousel-control right" href="#mainCarousel" data-slide="next"><span class="icon-next"></span></a>
+
                 </div>
 
                 <div class="container">
-                           
+                        <h1>
+                            <div class="input-group mainSearchBar">
+                                <input type="text" class="form-control" placeholder="Etsi palveluita!" name="srch-term" id="srch-term">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </h1>
+                </div>
+
+                <div class="container">
                             <div class = "row">
                                
                                 <div class = "col-sm-6">

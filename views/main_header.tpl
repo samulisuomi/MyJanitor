@@ -6,6 +6,7 @@
         <head>
                 <title>Taskit – palvelut sähkäristä parturiin</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta charset="utf-8"> 
 
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                 <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
@@ -15,7 +16,7 @@
         </head>
         <body>
 
-                <div class="navbar navbar-inverse navbar-static-top">
+                <div class="navbar navbar-inverse navbar-static-top {{ 'mainHeader' if request.path == '/introduction' else '' }}">
                         <div class="container">
                         
                                 <a href="/" class="navbar-brand logo-nav"><img src="img/taskit.png" height="100%"></a>
@@ -29,7 +30,7 @@
                                 <div class="collapse navbar-collapse navHeaderCollapse">
 
                                         <ul class="nav navbar-nav navbar-right">
-                                                <li class="{{ 'active' if request.path == '/' else '' }}"><a href="/">Esittely</a></lI>
+                                                <li class="{{ 'active' if request.path == '/introduction' else '' }}"><a href="/">Esittely</a></lI>
                                                 <li class="{{ 'active' if request.path == '/browse' else '' }}"><a href="/browse">Selaa palveluja</a></lI>
                                                 <li class="{{ 'active' if request.path == '/help' else '' }}"><a href="/help">Ohje</a></lI>
                                                 <li class="{{ 'active' if request.path == '/contact' else '' }}"><a href="/contact">Ota yhteyttä</a></lI>

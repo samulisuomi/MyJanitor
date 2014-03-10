@@ -22,8 +22,8 @@ body {
 }
 
 .img-responsive {
-	min-height: 300px;
-	min-width: 960px;
+	min-height: 320px;
+	min-width: 1056px;
 	width: 100%;
 }
 

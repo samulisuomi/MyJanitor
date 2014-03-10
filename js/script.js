@@ -33,4 +33,9 @@ $(document).ready(function(){
 		format: 'dd.MM.yyyy hh:mm',
 		pickSeconds: false
 	});
+
+	// Carousel delay adjust
+	$('#mainCarousel').carousel({
+    interval: 7000
+	});
 });

@@ -60,6 +60,15 @@ def serve_js(filename):
 def serve_fonts(filename):
     return static_file(filename, root="fonts")
 
+@app.route("/less/<filename:path>", name="less")
+def serve_less(filename):
+    return static_file(filename, root="less")
+
+@app.route("/scss/<filename:path>", name="scss")
+def serve_scss(filename):
+    return static_file(filename, root="scss")
+
+
 # This isn"t exactly ideal because all images must be placed in the root of img/, but it works for now.
 @app.route("<path:re:.*>/<filename:re:.*\.(jpg|gif|png|ico)>")
 def serve_images(filename, path):

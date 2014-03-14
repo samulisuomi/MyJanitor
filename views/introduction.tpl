@@ -38,14 +38,11 @@
                 </div>
 
                 <div class="container">
-                        <h1>
-                            <div class="input-group mainSearchBar">
-                                <input type="text" class="form-control" placeholder="Etsi palveluita!" name="srch-term" id="srch-term">
-                                <div class="input-group-btn">
-                                    <a href="/browse" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></a>
-                                </div>
-                            </div>
-                        </h1>
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            <h1><a href="/browse" class="btn btn-lg btn-success">Selaa palveluja!</a></h1>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="container">

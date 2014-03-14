@@ -10,6 +10,7 @@
 
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                 <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+                <link href="css/bootstrap-select.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
                 <link href="css/font-awesome.css" rel="stylesheet">
                 <link rel="shortcut icon" href="/img/favicon.ico">
@@ -42,6 +43,7 @@
                                                         </ul>
                                                
                                                 </li>
+<!--
                                                 <li class = "dropdown">
                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
                                                         <ul class="dropdown-menu">
@@ -52,8 +54,8 @@
                                                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                                                               </form>
                                                         </ul>
-                                               
-                                                </li>      
+                                                </li>
+-->
                                         </ul>
 
                                 </div>

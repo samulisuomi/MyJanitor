@@ -29,6 +29,7 @@ def introduction():
 
 @app.route("/browse")
 def browse():
+	debug(True)
 	return template("views/browse.tpl")
 
 @app.route("/help")

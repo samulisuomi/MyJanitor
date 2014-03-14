@@ -1,30 +1,46 @@
+% from py import browse
 % include("main_header.tpl")
 
     <div class="container">
-    	
+
     	<div class="row">
 			<div class="col-xs-12">
 				<h4 class="text-center">Valitse vähintään yksi palvelutyyppi:</h4>
-				<div class="btn-group-justified" id="workTypeFilter" data-toggle="buttons">
-				  <label class="btn btn-primary active">
-				    <input type="checkbox">Sisätilat
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="checkbox">Ulkotilat
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="checkbox">Putkityöt
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="checkbox">Sähkötyöt
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="checkbox">Siivous
-				  </label>
-				</div>
+				<h4>
+					<div class="btn-group-justified" id="workTypeFilter" data-toggle="buttons">
+					  <label class="btn btn-primary">
+					    <input type="checkbox">LVI
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox">Sähkötyöt
+					  </label>
+					  <label class="btn btn-primary active">
+					    <input type="checkbox">Sisätilat
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox">Ulkotilat
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox">Siivous
+					  </label>
+					</div>
+				</h4>
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-sm-3">
+				<h4>Sijainti:</h4>
+				<h4>
+					<select class="selectpicker" multiple>
+						  % cities = browse.getCities()
+						  % for city in cities:
+						  	<option>{{city}}</option>
+						  % end
+					</select>
+				</h4>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
 		      <h4>Hakutulokset:</h4>

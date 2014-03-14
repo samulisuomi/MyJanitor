@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	var navbarOpen = false;
 
+	// Enable Bootstrap-Select
+	$('.selectpicker').selectpicker({
+	});
+
 	// Toggles the value of navbarOpen according to the visibility of navbar
 	$('#mobileNavButton').click(function(){
 		if (navbarOpen) {

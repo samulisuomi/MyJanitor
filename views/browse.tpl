@@ -4,8 +4,8 @@
     <div class="container">
 
     	<div class="row">
-			<div class="col-xs-12">
-				<h4 class="text-center">Valitse vähintään yksi palvelutyyppi:</h4>
+			<div class="col-xs-12 text-center">
+				<h4>Valitse vähintään yksi palvelutyyppi:</h4>
 				<h4>
 					<div class="btn-group-justified" id="workTypeFilter" data-toggle="buttons">
 					  <label class="btn btn-primary">

@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
 	var navbarOpen = false;
+	updateWorkTypeFilterLayout();
+
+	$(window).resize(function() {
+		updateWorkTypeFilterLayout();
+	});
 
 	// Enable Bootstrap-Select
 	$('.selectpicker').selectpicker({
@@ -43,3 +48,14 @@ $(document).ready(function(){
     interval: 7000
 	});
 });
+
+function updateWorkTypeFilterLayout() {
+	// sm breakpoint = 408?
+	if ($(window).width() < 508) {
+	    $('#workTypeFilter').removeClass('btn-group-justified');
+	    $('#workTypeFilter').addClass('btn-group-vertical');
+	  } else {
+	    $('#workTypeFilter').addClass('btn-group-justified');
+	    $('#workTypeFilter').removeClass('btn-group-vertical');
+	  }
+}

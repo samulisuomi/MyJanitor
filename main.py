@@ -1,6 +1,9 @@
 from framework import bottle
-from framework.bottle import Bottle, TEMPLATE_PATH, route, template, error, request, debug, post, redirect
+from framework.bottle import Bottle, TEMPLATE_PATH, route, template, error, request, debug, post, redirect, url, SimpleTemplate
 from google.appengine.ext.webapp.util import run_wsgi_app
+
+#Instead of supplying url in every handler, set up a template default
+SimpleTemplate.defaults["url"] = lambda x, **kwargs: SETTINGS.URL_BASE + url(x, **kwargs)
 
 app = Bottle()
 TEMPLATE_PATH.insert(0,"views")	
@@ -48,6 +51,10 @@ def contact():
 def error404(error):
     return template("404.tpl")
 
+@app.route("/misc/<filename:path>")
+def serve_misc(filename):
+	return static_file(filename, root="misc")
+
 @app.route("/css/<filename:path>", name="css")
 def serve_css(filename):
 	return static_file(filename, root="css")
@@ -67,7 +74,6 @@ def serve_less(filename):
 @app.route("/scss/<filename:path>", name="scss")
 def serve_scss(filename):
     return static_file(filename, root="scss")
-
 
 # This isn"t exactly ideal because all images must be placed in the root of img/, but it works for now.
 @app.route("<path:re:.*>/<filename:re:.*\.(jpg|gif|png|ico)>")

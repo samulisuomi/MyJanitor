@@ -3,8 +3,8 @@
 
     <div class="container">
 
-    	<div class="row">
-			<div class="col-xs-12 text-center">
+    	<div class="row text-center">
+			<div class="col-xs-12">
 				<h4>Valitse vähintään yksi palvelutyyppi:</h4>
 				<h4>
 					<div class="btn-group-justified" id="workTypeFilter" data-toggle="buttons">
@@ -28,8 +28,8 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-3">
+		<div class="row text-center">
+			<div class="col-sm-4">
 				<h4>Sijainti:</h4>
 				<h4>
 					<select class="selectpicker" multiple>
@@ -39,6 +39,20 @@
 						  % end
 					</select>
 				</h4>
+			</div>
+			<div class="col-sm-4">
+				<h4>Ajankohta:</h4>
+				<h4>
+					<select class="selectpicker">
+						  	<option>Seuraavat 7 päivää</option>
+						  	<option>Seuraavat 14 päivää</option>
+						  	<option>Seuraavat 30 päivää</option>
+						  	<option>Tarkempi valinta...</option>
+					</select>
+				</h4>
+			</div>
+			<div class="col-sm-4">
+				<h1><button class="btn">Päivitä listaus</button></h1>
 			</div>
 		</div>
 		<div class="row">

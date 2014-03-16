@@ -8,8 +8,12 @@ $(document).ready(function(){
 	});
 
 	// Enable Bootstrap-Select
-	$('.selectpicker').selectpicker({
-	});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    	$('.selectpicker').selectpicker('mobile');
+	}
+	else {
+		$('.selectpicker').selectpicker();
+	}
 
 	// Toggles the value of navbarOpen according to the visibility of navbar
 	$('#mobileNavButton').click(function(){

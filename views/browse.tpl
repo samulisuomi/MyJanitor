@@ -47,7 +47,7 @@
 						  	<option>Seuraavat 7 päivää</option>
 						  	<option>Seuraavat 14 päivää</option>
 						  	<option>Seuraavat 30 päivää</option>
-						  	<option>Tarkempi valinta...</option>
+						  	<option>Koska tahansa</option>
 					</select>
 				</h4>
 			</div>

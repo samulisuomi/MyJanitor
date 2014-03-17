@@ -8,13 +8,13 @@
 				<h4>Valitse vähintään yksi palvelutyyppi:</h4>
 				<h4>
 					<div class="btn-group-justified" id="workTypeFilter" data-toggle="buttons">
-					  <label class="btn btn-primary">
+					  <label class="btn btn-primary active">
 					    <input type="checkbox">LVI
 					  </label>
 					  <label class="btn btn-primary">
 					    <input type="checkbox">Sähkötyöt
 					  </label>
-					  <label class="btn btn-primary active">
+					  <label class="btn btn-primary">
 					    <input type="checkbox">Sisätilat
 					  </label>
 					  <label class="btn btn-primary">
@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="row text-center">
-			<div class="col-sm-4">
+			<div class="col-md-3 col-sm-4">
 				<h4>Sijainti:</h4>
 				<h4>
 					<select class="selectpicker" multiple>
@@ -40,7 +40,7 @@
 					</select>
 				</h4>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-3 col-sm-4">
 				<h4>Ajankohta:</h4>
 				<h4>
 					<select class="selectpicker">
@@ -51,38 +51,28 @@
 					</select>
 				</h4>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-6 col-sm-4">
 				<h1><button class="btn">Päivitä listaus</button></h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
 		      <h4>Hakutulokset:</h4>
-		      <table class="table-responsive browsingTable">
+		      <table class="table table-responsive browsingTable">
 		        <thead>
 		          <tr>
 		            <th></th>
 		            <th>Yritys</th>
 		            <th>Palvelu</th>
-		            <th>Palvelukuvaus</th>
+		            <th>Ajankohta</th>
 		            <th></th>
 		          </tr>
 		        </thead>
 		        <tbody>
-		          <tr>
-		            <td width="50px"><img src="img/favicon.ico" width="50px" height="50px"></td>
-		            <td>Varsinais-Suomen LVI-Hermannit Oy</td>
-		            <td>LVI</td>
-		            <td>Tämän yrityksen kuvaus oman palvelunsa hyvyydestä...</td>
-		            <td><button class="btn btn-success" data-toggle="modal" data-target="#reservationModal">Varaa!</button></td>
-		          </tr>
-		          <tr>
-		            <td width="50px"><img src="img/favicon.ico" width="50px" height="50px"></td>
-		            <td>Remppajampat Ky</td>
-		            <td>LVI, Lattia-asennukset, Saneeraukset</td>
-		            <td>Tämän yrityksen kuvaus oman palvelunsa hyvyydestä...</td>
-		            <td><button class="btn btn-success" data-toggle="modal" data-target="#reservationModal">Varaa!</button></td>
-		          </tr>
+				   %include("row_search_results.tpl", name="Varsinais-Suomen LVI-Hermannit Oy", id=0)
+				   %include("row_search_results.tpl", name="Remppajampat Ky", id=1)
+				   %include("row_search_results.tpl", name="Vessa ja Vessa Oy", id=2)
+				   %include("row_search_results.tpl", name="Mutteri ja Jesari Oy", id=3)
 		        </tbody>
 		      </table>
 			</div>

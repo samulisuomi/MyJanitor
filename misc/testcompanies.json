@@ -1,18 +1,22 @@
-{
-  "companies": [
+﻿{
+  "records": [
     {
-      "name": "",
-      "name": "",
+      "nimi": "Varsinais-Suomeasdn LVI-Hermannit Oy",
+      "palvelut": "LVI"
     },
     {
-      "someAttribute": "I am record two",
-      "someOtherAttribute": "Cuz it's awesome"
+      "nimi": "Remppajampat Ky",
+      "palvelut": "LVI, Sisätilat, Ulkotilat"
     },
     {
-      "someAttribute": "I am record three",
-      "someOtherAttribute": "Yup, still AJAX"
+      "nimi": "Vessa ja Vessa Oy",
+      "palvelut": "LVI"
+    },
+	{
+      "nimi": "Mutteri ja Jesari Oy",
+      "palvelut": "LVI"
     }
   ],
-  "queryRecordCount": 3,
-  "totalRecordCount": 3
+  "queryRecordCount": 4,
+  "totalRecordCount": 4
 }

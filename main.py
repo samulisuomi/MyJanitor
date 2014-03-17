@@ -1,5 +1,5 @@
 from framework import bottle
-from framework.bottle import Bottle, TEMPLATE_PATH, route, template, error, request, debug, post, redirect, url, SimpleTemplate
+from framework.bottle import Bottle, TEMPLATE_PATH, route, template, error, request, debug, post, redirect, url, SimpleTemplate, static_file
 from google.appengine.ext.webapp.util import run_wsgi_app
 
 #Instead of supplying url in every handler, set up a template default
@@ -39,10 +39,6 @@ def help():
 @app.route("/contact")
 def contact():
 	return template("views/contact.tpl")
-
-@app.route("/customerdemo")
-def contact():
-	return template("views/customerdemo.tpl")
 
 @app.route("/providerdemo")
 def contact():

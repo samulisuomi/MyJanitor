@@ -7,6 +7,7 @@ $(document).ready(function(){
 		updateWorkTypeFilterLayout();
 	});
 
+
 	// Enable Bootstrap-Select
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     	$('.selectpicker').selectpicker('mobile');
@@ -36,21 +37,17 @@ $(document).ready(function(){
 	});
 
 	// Date time picker for reservations
-	$('#timePickerStart').datetimepicker({
-		format: 'dd.MM.yyyy hh:mm',
-		pickSeconds: false
-	});
+	$('.pickerStart').datetimepicker({
+		format: 'dd.MM.yyyy',
+		pickTime: false
 
-	// Date time picker for reservations
-	$('#timePickerEnd').datetimepicker({
-		format: 'dd.MM.yyyy hh:mm',
-		pickSeconds: false
 	});
 
 	// Carousel delay adjust
 	$('#mainCarousel').carousel({
     interval: 7000
 	});
+
 });
 
 function updateWorkTypeFilterLayout() {

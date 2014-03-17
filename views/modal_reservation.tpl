@@ -8,14 +8,7 @@
 	      </div>
 	      <div class="modal-body">
 		  <h4>Alkamisajankohta:</h4>
-			<div id="timePickerStart" class="form-inline date">
-			    <input type="text" class="form-control"></input>
-			    <span class="add-on">
-			     	<i class="btn btn-default" data-time-icon="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar"></i>
-			    </span>
-			</div>
-		  <h4>Päättymisajankohta:</h4>
-		  	<div id="timePickerEnd" class="form-inline date">
+			<div id="picker-keksi-talle-id" class="pickerStart form-inline date">
 			    <input type="text" class="form-control"></input>
 			    <span class="add-on">
 			     	<i class="btn btn-default" data-time-icon="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar"></i>

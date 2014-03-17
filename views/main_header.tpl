@@ -11,6 +11,7 @@
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                 <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
                 <link href="css/bootstrap-select.css" rel="stylesheet">
+                <link href="css/jquery.dynatable.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
                 <link href="css/font-awesome.css" rel="stylesheet">
                 <link rel="shortcut icon" href="/img/favicon.ico">

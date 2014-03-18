@@ -16,7 +16,7 @@ $(document).ready(function(){
 		    allowMonthSelect: true,
 		    allowYearSelect: true,
 		    dowOffset: 1,
-		    todayDate: new Date(),
+		    //todayDate: new Date(),
 		    selectedDate: new Date(2014, 2, 19),
 		    selectableDateRange: [
 		        { from: new Date(2014, 2, 19),
@@ -69,6 +69,14 @@ $(document).ready(function(){
     interval: 7000
 	});
 
+});
+
+$(document).on("click", ".openResModalButton", function () {
+	console.debug($("#dateBox"+this.id).val());
+
+	$("#dateBox_modal").val($("#dateBox"+this.id).val());
+     /*var myBookId = $(this).data('id');
+     $(".modal-body #bookId").val( myBookId );*/
 });
 
 function updateWorkTypeFilterLayout() {

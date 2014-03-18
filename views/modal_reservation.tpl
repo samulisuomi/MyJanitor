@@ -8,8 +8,8 @@
 	      </div>
 	      <div class="modal-body">
 		  <h4>Alkamisajankohta: *</h4>
-			<input type="text" class="glDateBox form-control" id="datebox_modal" gldp-id="datebox_modal"></input>
-		    <div gldp-el="datebox_modal" style="width:400px; height:300px; position:fixed; top:0px; left:0px;"></div>
+			<input type="text" class="glDateBox form-control" id="dateBox_modal" gldp-id="dateBox_modal"></input>
+		    <div gldp-el="dateBox_modal" style="width:400px; height:300px; position:fixed; top:0px; left:0px;"></div>
 	      <h4>Tarpeellisia lisätietoja: *</h4>
 	      <textarea class="form-control" rows="4"></textarea>
 	      </div>

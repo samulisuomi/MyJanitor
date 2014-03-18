@@ -7,6 +7,25 @@ $(document).ready(function(){
 		updateWorkTypeFilterLayout();
 	});
 
+	$('.glDateBox').glDatePicker({
+		cssName: "flatwhite",
+	    showAlways: false,
+	    allowMonthSelect: true,
+	    allowYearSelect: true,
+	    dowOffset: 1,
+	    prevArrow: '',
+	    nextArrow: '',
+	    selectedDate: new Date(2014, 2, 19),
+	    selectableDateRange: [
+	        { from: new Date(2014, 2, 19),
+	            to: new Date(2014, 2, 21) },
+	        { from: new Date(2014, 2, 24),
+	            to: new Date(2014, 2, 28) },
+	    ],
+	    selectableDates: [
+	        { date: new Date(2014, 2, 31) }
+	    ]
+	});
 
 	// Enable Bootstrap-Select
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -34,13 +53,6 @@ $(document).ready(function(){
 			$('#mobileNavButton').click();
 		}
 		$('#loginDropdown').dropdown('toggle');
-	});
-
-	// Date time picker for reservations
-	$('.pickerStart').datetimepicker({
-		format: 'dd.MM.yyyy',
-		pickTime: false
-
 	});
 
 	// Carousel delay adjust

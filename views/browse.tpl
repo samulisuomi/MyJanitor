@@ -52,7 +52,7 @@
 				</h4>
 			</div>
 			<div class="col-md-6 col-sm-4">
-				<h1><button class="btn">Päivitä listaus</button></h1>
+				<h1><button class="btn" id="refreshListing">Päivitä listaus</button></h1>
 			</div>
 		</div>
 		<div class="row">
@@ -68,7 +68,7 @@
 		            <th></th>
 		          </tr>
 		        </thead>
-		        <tbody>
+		        <tbody id="browsingTableResults">
 				   %include("row_search_results.tpl", name="Varsinais-Suomen LVI-Hermannit Oy", id=0)
 				   %include("row_search_results.tpl", name="Remppajampat Ky", id=1)
 				   %include("row_search_results.tpl", name="Vessa ja Vessa Oy", id=2)
@@ -77,7 +77,6 @@
 		      </table>
 			</div>
 		</div>
-
 	</div>
 
 % include("modal_reservation.tpl")

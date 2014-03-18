@@ -2,29 +2,32 @@ $(document).ready(function(){
 
 	var navbarOpen = false;
 	updateWorkTypeFilterLayout();
+	$('#browsingTableResults').hide();
 
 	$(window).resize(function() {
 		updateWorkTypeFilterLayout();
 	});
 
-	$('.glDateBox').glDatePicker({
-		cssName: "flatwhite",
-	    showAlways: false,
-	    allowMonthSelect: true,
-	    allowYearSelect: true,
-	    dowOffset: 1,
-	    prevArrow: '',
-	    nextArrow: '',
-	    selectedDate: new Date(2014, 2, 19),
-	    selectableDateRange: [
-	        { from: new Date(2014, 2, 19),
-	            to: new Date(2014, 2, 21) },
-	        { from: new Date(2014, 2, 24),
-	            to: new Date(2014, 2, 28) },
-	    ],
-	    selectableDates: [
-	        { date: new Date(2014, 2, 31) }
-	    ]
+	$(window).load(function(){
+		// glDateBox test
+		$('.glDateBox').glDatePicker({
+			cssName: "flatwhite",
+		    showAlways: false,
+		    allowMonthSelect: true,
+		    allowYearSelect: true,
+		    dowOffset: 1,
+		    todayDate: new Date(),
+		    selectedDate: new Date(2014, 2, 19),
+		    selectableDateRange: [
+		        { from: new Date(2014, 2, 19),
+		            to: new Date(2014, 2, 21) },
+		        { from: new Date(2014, 2, 24),
+		            to: new Date(2014, 2, 28) },
+		    ],
+		    selectableDates: [
+		        { date: new Date(2014, 2, 31) }
+		    ]
+		});
 	});
 
 	// Enable Bootstrap-Select
@@ -43,6 +46,12 @@ $(document).ready(function(){
 		else {
 			navbarOpen = true;
 		}
+	});
+
+	// TEMPORARY: open tbody 
+	$('#refreshListing').click(function(e){
+		//e.stopPropagation();
+		$('#browsingTableResults').show();
 	});
 
 	//Toggles log in dropdown

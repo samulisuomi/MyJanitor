@@ -31,11 +31,15 @@
 
                                 <div class="collapse navbar-collapse navHeaderCollapse">
 
-                                        <ul class="nav navbar-nav navbar-right">
+                                        <ul class="nav navbar-nav navbar-left">
                                                 <li class="{{ 'active' if request.path == '/introduction' else '' }}"><a href="/">Esittely</a></lI>
                                                 <li class="{{ 'active' if request.path == '/browse' else '' }}"><a href="/browse">Selaa palveluja</a></lI>
                                                 <li class="{{ 'active' if request.path == '/help' else '' }}"><a href="/help">Ohje</a></lI>
                                                 <li class="{{ 'active' if request.path == '/contact' else '' }}"><a href="/contact">Yhteystiedot</a></lI>
+                                        </ul>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                                <li class="{{ 'active' if request.path == '/register' else '' }}"><a href="/register">Rekisteröidy</a></lI>
                                                 <li class = "dropdown">
                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="loginDropdown">Kirjaudu<b class="caret"></b></a>
                                                         <ul class="dropdown-menu">
@@ -44,19 +48,6 @@
                                                         </ul>
                                                
                                                 </li>
-<!--
-                                                <li class = "dropdown">
-                                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                                <form class="navbar-form" role="search">
-                                                                <div class="form-group">
-                                                                  <input type="text" class="form-control" placeholder="Etsi palveluja!">
-                                                                </div>
-                                                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                                                              </form>
-                                                        </ul>
-                                                </li>
--->
                                         </ul>
 
                                 </div>

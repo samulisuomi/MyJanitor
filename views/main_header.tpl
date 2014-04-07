@@ -41,11 +41,16 @@
                                         <ul class="nav navbar-nav navbar-right">
                                                 <li class="{{ 'active' if request.path == '/register' else '' }}"><a href="/register">Rekisteröidy</a></lI>
                                                 <li class = "dropdown">
-                                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="loginDropdown">Kirjaudu<b class="caret"></b></a>
-                                                        <ul class="dropdown-menu">
-                                                                <li><a href = "#">Insert login form here</a></li>
-                                                                <li><a href = "#">With both sign up and in buttons</a></li>
-                                                        </ul>
+                                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="loginDropdownButton">Kirjaudu<b class="caret"></b></a>
+                                                        <div class="dropdown-menu" id="loginDropdownDiv">
+                                                          <form class="form" role="form" id="loginForm"> 
+                                                            <input name="username" id="username" type="text" class="form-control" placeholder="Käyttäjätunnus"><br>
+                                                            <input name="password" id="password" type="password" class="form-control" placeholder="Salasana"><br>
+                                                            <button type="button" id="btnLogin" class="btn">Kirjaudu sisään</button>
+                                                          </form>
+                                                          <br>
+                                                          <a href="/restorePw">Salasana unohtunut?</a>
+                                                        </div>
                                                
                                                 </li>
                                         </ul>
